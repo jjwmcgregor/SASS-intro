@@ -1,0 +1,225 @@
+// ====== GLOBAL STYLES =======
+$color-1: #D33F49;
+$color-2: #F6D8AE;
+$color-3: #2E4057;
+$color-4: #77BA99;
+$color-5: #262730;
+
+@font-face {
+  src:url('fonts/impact-label/Impact Label.ttf');
+  font-family: 'Impact Label';
+}
+
+@font-face {
+  src:url('fonts/impact-label/Impact Label Reversed.ttf');
+  font-family: 'Impact Label Reversed';
+}
+
+$font-family-1: 'Poiret One', cursive;
+$font-family-2: 'Unlock', cursive;
+$font-family-3: 'Luckiest Guy', cursive;
+$font-family-4: 'Impact Label', cursive;
+$font-family-5: 'Impact Label Reversed', cursive;
+
+// ====== BOOTSTRAP OVVERRIDES =======
+body {
+  font-family: $font-family-5;
+  background: $color-2;
+}
+
+.container-fluid {
+  margin:0;
+  padding:0;
+}
+
+// ====== NAVBAR =======
+.navbar {
+  border-radius: 0 !important;
+  background: $color-5;
+  border:0;
+  margin-bottom:0;
+
+  .navbar-toggle {
+    border: 0;
+
+    &:hover, &:focus {
+      background-color: black !important;
+    }
+
+    .icon-bar {
+      background-color: $color-2 !important;
+    }
+  }
+
+  form {
+
+    .form-group {
+
+      input[type="text"] {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $color-2;
+      }
+
+      input::placeholder {
+        color: $color-4;
+      }
+
+      .form-control {
+        &:focus {
+          box-shadow:none;
+        }
+      }
+    }
+
+    .btn-default {
+      background: none;
+      border-color: $color-2;
+      color: $color-2;
+    }
+
+  }
+
+  .dropdown-menu {
+    background: $color-3;
+  }
+
+  .navbar-nav>.open>a {
+    background: black !important;
+  }
+
+  .active a {
+    background: $color-4 !important;
+    color: $color-3 !important;
+  }
+
+  a {
+    color:$color-2 !important;
+  }
+}
+
+// ====== JUMBOTRON =======
+.jumbootron-gallery {
+  background-color: black;
+  height:700px;
+  background-color:black;
+  background: url('../img/image8.jpeg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  filter: hue-rotate(270deg);
+
+  .jumbotron {
+    background-color: transparent;
+    border-radius: 0 !important;
+    height:100%;
+
+    h1,p {
+      color:white !important;
+    }
+  }
+  .btn {
+    background: lighten($color-3, 50%);
+    padding:1em 2em;
+    border-radius: 0;
+    transition:.2s;
+    color:$color-3;
+
+    &:hover {;
+      color:lighten($color-3, 50%);
+      background: darken($color-3,10%);
+    }
+  }
+}
+
+// ====== ABOUT =======
+.about {
+  background: $color-4;
+  padding: 8em 0;
+  color:$color-3;
+
+  .row {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .about {
+    padding: 5em 2em;
+  }
+}
+
+// ====== GALLERY =======
+.gallery {
+  overflow: hidden;
+  margin-bottom: 0;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gallery-column {
+      flex: 25%;
+
+      .thumbnail {
+        overflow: hidden;
+        scroll-behavior: auto;
+        padding:0;
+        border-radius: 0 !important;
+        margin-bottom: 0;
+        border:none;
+
+        img {
+          border-radius: 0 !important;
+          background: black;
+          filter:grayscale(80%);
+          transition: .2s;
+
+          &:hover {
+            transform:scale(1.03);
+            filter:none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ====== BORDER =======
+.border {
+  height:200px;
+  width:100vw;
+  // position: absolute;
+  background: $color-5;
+  transform: translateY(-50px);
+
+}
+
+// ====== FOOTER =======
+.footer {
+  // transform: translateY(-50px);
+  background: $color-2 !important;
+
+  .row {
+    padding:6em 2em;
+
+    .list-group {
+
+      .list-group-item {
+        background: none;
+        border:none;
+        text-align: right;
+        padding: 3px;
+
+        a {
+          transition: .2s;
+          color:$color-1;
+
+          &:hover {
+            text-decoration: none;
+            color:darken($color-1, 30%);
+          }
+        }
+      }
+    }
+  }
+}

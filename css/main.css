@@ -1,0 +1,128 @@
+@font-face {
+  src: url("fonts/impact-label/Impact Label.ttf");
+  font-family: 'Impact Label'; }
+@font-face {
+  src: url("fonts/impact-label/Impact Label Reversed.ttf");
+  font-family: 'Impact Label Reversed'; }
+body {
+  font-family: "Impact Label Reversed", cursive;
+  background: #F6D8AE; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  border-radius: 0 !important;
+  background: #262730;
+  border: 0;
+  margin-bottom: 0; }
+  .navbar .navbar-toggle {
+    border: 0; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background-color: black !important; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #F6D8AE !important; }
+  .navbar form .form-group input[type="text"] {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #F6D8AE; }
+  .navbar form .form-group input::placeholder {
+    color: #77BA99; }
+  .navbar form .form-group .form-control:focus {
+    box-shadow: none; }
+  .navbar form .btn-default {
+    background: none;
+    border-color: #F6D8AE;
+    color: #F6D8AE; }
+  .navbar .dropdown-menu {
+    background: #2E4057; }
+  .navbar .navbar-nav > .open > a {
+    background: black !important; }
+  .navbar .active a {
+    background: #77BA99 !important;
+    color: #2E4057 !important; }
+  .navbar a {
+    color: #F6D8AE !important; }
+
+.jumbootron-gallery {
+  background-color: black;
+  height: 700px;
+  background-color: black;
+  background: url("../img/image8.jpeg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  filter: hue-rotate(270deg); }
+  .jumbootron-gallery .jumbotron {
+    background-color: transparent;
+    border-radius: 0 !important;
+    height: 100%; }
+    .jumbootron-gallery .jumbotron h1, .jumbootron-gallery .jumbotron p {
+      color: white !important; }
+  .jumbootron-gallery .btn {
+    background: #afc0d5;
+    padding: 1em 2em;
+    border-radius: 0;
+    transition: .2s;
+    color: #2E4057; }
+    .jumbootron-gallery .btn:hover {
+      color: #afc0d5;
+      background: #1c2736; }
+
+.about {
+  background: #77BA99;
+  padding: 8em 0;
+  color: #2E4057; }
+  .about .row {
+    text-align: center; }
+
+@media screen and (max-width: 660px) {
+  .about {
+    padding: 5em 2em; } }
+.gallery {
+  overflow: hidden;
+  margin-bottom: 0; }
+  .gallery .row {
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery .row .gallery-column {
+      flex: 25%; }
+      .gallery .row .gallery-column .thumbnail {
+        overflow: hidden;
+        scroll-behavior: auto;
+        padding: 0;
+        border-radius: 0 !important;
+        margin-bottom: 0;
+        border: none; }
+        .gallery .row .gallery-column .thumbnail img {
+          border-radius: 0 !important;
+          background: black;
+          filter: grayscale(80%);
+          transition: .2s; }
+          .gallery .row .gallery-column .thumbnail img:hover {
+            transform: scale(1.03);
+            filter: none; }
+
+.border {
+  height: 200px;
+  width: 100vw;
+  background: #262730;
+  transform: translateY(-50px); }
+
+.footer {
+  background: #F6D8AE !important; }
+  .footer .row {
+    padding: 6em 2em; }
+    .footer .row .list-group .list-group-item {
+      background: none;
+      border: none;
+      text-align: right;
+      padding: 3px; }
+      .footer .row .list-group .list-group-item a {
+        transition: .2s;
+        color: #D33F49; }
+        .footer .row .list-group .list-group-item a:hover {
+          text-decoration: none;
+          color: #62171c; }
+
+/*# sourceMappingURL=main.css.map */
